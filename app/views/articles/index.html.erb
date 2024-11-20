@@ -1,0 +1,29 @@
+<% @search.each do |i|%>
+<%= i.id %>
+<%= i.name %>
+<%= i.city %>
+<% end %>
+
+
+<form action="/articles" method="post">
+	 <div >
+        <label for="id">Id</label>
+        <input type="text" name="id" required>
+      </div> 
+     <div >
+        <label for="name">Name</label>
+        <input type="text" name="name" required>
+      </div>
+      <div>
+        <label for="city">City</label>
+        <input type="text" name="city" required>
+      </div>
+      <button type="submit">Add a new emp</button>
+      <%# <div class="forgot-password">
+        <a href="/forgot-password">Forgot Password?</a>
+      </div> %>
+</form><br><br>
+
+
+
+

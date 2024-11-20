@@ -1,0 +1,9 @@
+<%= @arr.name %>
+<%= @arr.city %>
+
+<%# <%= link_to 'Delete', article_path(@arr), method: :delete, data: {confirm: 'are you sure'}%> 
+
+<%= link_to "Destroy", article_path(@arr), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %>
